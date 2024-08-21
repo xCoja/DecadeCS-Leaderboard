@@ -16,6 +16,15 @@ html {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Benguiat';
+    src: url('assets/font/benguiat_[allfont.net].woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -107,26 +116,28 @@ nav .logo-text {
 
 .diamond {
     color: #0074D9;
-    font-family: 'ModernWarfare', sans-serif;
+    font-family: 'Benguiat', serif;
+    font-size: 65px;
 }
 
 .rewards {
     color: white;
-    
-    font-family: 'ModernWarfare', sans-serif;
+    font-size: 65px;
+    font-family: 'Benguiat', serif;
 }
 
 
 .diamond-2 {
     color: #0074D9;
-    font-family: 'ModernWarfare', sans-serif;
-    font-size: 20px;
+    font-family: 'Benguiat', serif;
+    font-size: 25px;
 }
 
 .rewards-2 {
     color: white;
-    font-size: 20px;
-    font-family: 'ModernWarfare', sans-serif;
+    font-size: 25px;
+    font-family: 'Benguiat', serif;
+
 }
 
 /* Main Section Styling */
