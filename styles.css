@@ -35,17 +35,17 @@ body {
 }
 
 nav {
-   
     backdrop-filter: blur(10px); /* Blur the elements behind the navbar */
     padding: 15px 40px;
     display: flex;
     justify-content: space-between; /* Space between the logo and links */
     align-items: center; /* Vertically center the content */
-    position: fixed; /* Changed from sticky to fixed */
+    position: fixed; /* Keep the navbar fixed at the top */
     top: 0;
     width: 100%; /* Ensure the navbar takes the full width of the viewport */
     z-index: 1000; /* Ensure the navbar stays on top */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 80px; /* Set a fixed height for the navbar */
 }
 
 .nav-links {
@@ -58,12 +58,12 @@ nav {
     max-width: 1155px;
     margin: auto;
     padding: 50px 10px;
-  }
-  
-  .d-flex {
+}
+
+.d-flex {
     display: flex;
     gap: 10px;
-  }
+}
 
 nav a {
     color: white;
@@ -103,6 +103,28 @@ nav a.active::after {
 .logo-img {
     height: 30px;
 }
+
+
+
+.logo-image {
+    height: 70px; /* Ensure the logo fits within the navbar height */
+    border-radius: 5px;
+    vertical-align: middle; /* Align the logo with the text */
+    margin-right: 12px; /* Space between the logo and the text */
+    border: 1px solid rgb(105, 105, 105);
+}
+
+
+
+  
+  .logo-text .diamond-2, .logo-text .rewards-2 {
+    /* Existing styles for DIAMOND and REWARDS should remain here */
+    /* Example: */
+    font-weight: bold;
+    font-size: 1.5rem;
+    /* Add your other styles as needed */
+  }
+  
 
 /* Adjust the logo text size specifically in the nav */
 nav .logo-text {
