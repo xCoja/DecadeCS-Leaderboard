@@ -38,20 +38,22 @@ nav {
     backdrop-filter: blur(10px); /* Blur the elements behind the navbar */
     padding: 15px 40px;
     display: flex;
-    justify-content: space-between; /* Space between the logo and links */
+    justify-content: center; /* Center the content */
     align-items: center; /* Vertically center the content */
     position: fixed; /* Keep the navbar fixed at the top */
     top: 0;
     width: 100%; /* Ensure the navbar takes the full width of the viewport */
     z-index: 1000; /* Ensure the navbar stays on top */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    height: 80px; /* Set a fixed height for the navbar */
+    border-bottom: 1px solid rgb(117, 116, 116);
+    height: 60px; /* Set a fixed height for the navbar */
 }
 
 .nav-links {
     display: flex;
     gap: 20px;
     align-items: center; /* Ensure links are centered vertically */
+    position: absolute;
+    right: 40px; /* Align the links to the right side of the nav */
 }
 
 .container {
@@ -96,22 +98,20 @@ nav a.active::after {
 }
 
 .logo {
+    position: absolute;
+    left: 40px; /* Align the logo to the left side of the nav */
     display: flex;
     align-items: center; /* Ensure the logo is centered vertically */
 }
 
-.logo-img {
-    height: 30px;
-}
 
 
 
 .logo-image {
-    height: 70px; /* Ensure the logo fits within the navbar height */
+    height: 55px; /* Ensure the logo fits within the navbar height */
     border-radius: 5px;
-    vertical-align: middle; /* Align the logo with the text */
-    margin-right: 12px; /* Space between the logo and the text */
-    border: 1px solid rgb(105, 105, 105);
+    margin-right: 15px;
+    
 }
 
 
@@ -369,7 +369,7 @@ nav .logo-text {
 }
 
 .bonus-card {
-    background-color: #1a1a1a;
+    background-color: #1a1818;
     border-radius: 10px;
     padding: 20px;
     width: 300px; /* Adjust the width as necessary */

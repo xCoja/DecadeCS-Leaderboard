@@ -16,6 +16,13 @@
   src: url(assets/font/ModernWarfare-8MM6z.ttf);
 }
 
+@font-face {
+  font-family: 'Benguiat';
+  src: url('assets/font/benguiat_[allfont.net].woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --secondary-color: #02d0ce;
   --primary-color: #4e7e7e;
@@ -35,6 +42,9 @@ body {
   margin: auto;
   padding: 50px 10px;
 }
+
+
+
 
 .d-flex {
   display: flex;
@@ -1299,6 +1309,8 @@ form .btn a {
   margin-left: 0px; /* Adjust this value to position correctly relative to the text */
 }
 
+
+
 .timer-package .row .col-1 h2 img.dollar-img {
   
     position: absolute;
@@ -1311,17 +1323,41 @@ form .btn a {
   
 }
 
-.h1-title {
+.h1-title-container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 250px;
-  margin-top: 100px;
+  margin-top: 95px;
+}
 
+.h1-title {
+  margin: 0 10px; /* Space around the images */
 }
 
 .h1-title img {
-  max-width: 400px;
+  max-width: 200px;
+}
+
+.vertical-line {
+  width: 1px; /* Thickness of the line */
+  height: 50px; /* Height of the line */
+  background-color: #ffffff; /* Line color */
+  margin: 0 10px; /* Optional: adjust space around the line */
+}
+
+
+.h1-title img:first-child {
+  margin-right: 20px; 
+}
+
+.rain-image {
+  transform: translateY(-5px); /* Adjust the value as needed, -5px moves it up */
+  margin-left: 20px;
+}
+
+#active {
+  opacity: 0.5;
 }
 
 .timer-package .row .col-1 .dollar-wagered p span span {
@@ -1381,6 +1417,7 @@ form .btn a {
   background-clip: text;
   color: transparent;
 }
+
 
 
 
@@ -1966,22 +2003,36 @@ html {
 
 
 nav {
-  backdrop-filter: blur(10px); 
+  backdrop-filter: blur(10px); /* Blur the elements behind the navbar */
   padding: 15px 40px;
   display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-  position: fixed; 
+  justify-content: center; /* Center the content */
+  align-items: center; /* Vertically center the content */
+  position: fixed; /* Keep the navbar fixed at the top */
   top: 0;
-  width: 100%; 
-  z-index: 1000; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%; /* Ensure the navbar takes the full width of the viewport */
+  z-index: 1000; /* Ensure the navbar stays on top */
+  border-bottom: 1px solid rgb(117, 116, 116);
+  height: 60px; /* Set a fixed height for the navbar */
 }
 
 .nav-links {
   display: flex;
   gap: 20px;
-  align-items: center; 
+  align-items: center; /* Ensure links are centered vertically */
+  position: absolute;
+  right: 40px; /* Align the links to the right side of the nav */
+}
+
+.container {
+  max-width: 1155px;
+  margin: auto;
+  padding: 50px 10px;
+}
+
+.d-flex {
+  display: flex;
+  gap: 10px;
 }
 
 nav a {
@@ -1990,8 +2041,8 @@ nav a {
   font-weight: bold;
   font-size: 1rem;
   position: relative;
-  line-height: 1; 
-  padding: 5px 0;
+  line-height: 1; /* Adjust line-height to avoid text overflow */
+  padding: 5px 0; /* Adding padding to create space above and below the text */
 }
 
 nav a:hover {
@@ -2004,36 +2055,78 @@ nav a::after {
   left: 50%;
   bottom: 0;
   height: 3px;
-  width: 50%; 
+  width: 50%; /* Half the width of the text */
   background-color: transparent;
   transform: translateX(-50%);
   transition: background-color 0.3s;
 }
 
 nav a.active::after {
-  background-color: #0074D9; 
+  background-color: #0074D9; /* Blue underline for active link */
 }
 
 .logo {
+  position: absolute;
+  left: 40px; /* Align the logo to the left side of the nav */
   display: flex;
-  align-items: center; 
+  align-items: center; /* Ensure the logo is centered vertically */
 }
 
-.logo-img {
-  height: 30px;
+.logo-2 {
+  position: absolute;
+  display: flex;
+  align-items: center; /* Ensure the logo is centered vertically */
+  
+}
+.logo-2 img {
+  position: relative;
+  bottom: 20px; /* Move the image up by 20 pixels */
+  max-width: 50%;
+  border-radius: 10px;
 }
 
-/* Logo Text Styling */
+
+
+
+
+
+
+.logo-image {
+  height: 55px; /* Ensure the logo fits within the navbar height */
+  border-radius: 5px;
+  margin-right: 15px;
+  
+}
+
+
+
+
+.logo-text .diamond-2, .logo-text .rewards-2 {
+  
+  font-weight: bold;
+  font-size: 1.5rem;
+  /* Add your other styles as needed */
+}
+
+
+/* Adjust the logo text size specifically in the nav */
+nav .logo-text {
+  font-size: 1.5rem;
+}
+
+/* Logo Text Styling for both sections */
 .logo-text {
   font-weight: bold;
 }
 
 .diamond {
   color: #0074D9;
-  font-family: 'Pacifico', cursive;
-  font-size: 30px;
+  font-family: 'Benguiat', serif;
+  font-size: 25px;
 }
 
 .rewards {
-  font-size: 30px;
+  color: white;
+  font-size: 25px;
+  font-family: 'Benguiat', serif;
 }
