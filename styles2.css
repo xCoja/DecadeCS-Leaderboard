@@ -1463,7 +1463,7 @@ form .btn a {
 .countdown div span {
   display: block;
   font-size: 39.15px;
-  color: var(--secondary-color);
+  color: #31b9ff;
   font-weight: 800;
   text-shadow: 0px 0px 16px rgba(2, 208, 206, 0.53);
   position: relative;
@@ -1639,7 +1639,7 @@ footer .copy-right {
 }
 
 footer li a {
-  color: var(--primary-color);
+  color: #31b9ff;
   font-size: 16px;
   font-weight: 400;
   line-height: 23.36px;
@@ -1658,7 +1658,7 @@ footer .icons .icon-wrapper {
   width: 40px;
   height: 40px;
   line-height: 40px;
-  background-color: var(--secondary-color);
+  background-color: #31b9ff;
   font-size: 20px;
   color: var(--not-black);
   display: flex;
@@ -2062,7 +2062,7 @@ nav a::after {
 }
 
 nav a.active::after {
-  background-color: #0074D9; /* Blue underline for active link */
+  background-color: #31b9ff; /* Blue underline for active link */
 }
 
 .logo {
@@ -2120,7 +2120,7 @@ nav .logo-text {
 }
 
 .diamond {
-  color: #0074D9;
+  color: #31b9ff;
   font-family: 'Benguiat', serif;
   font-size: 25px;
 }

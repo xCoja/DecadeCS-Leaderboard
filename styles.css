@@ -94,7 +94,7 @@ nav a::after {
 }
 
 nav a.active::after {
-    background-color: #0074D9; /* Blue underline for active link */
+    background-color: #31b9ff; /* Blue underline for active link */
 }
 
 .logo {
@@ -137,7 +137,7 @@ nav .logo-text {
 }
 
 .diamond {
-    color: #0074D9;
+    color: #31b9ff;
     font-family: 'Benguiat', serif;
     font-size: 65px;
 }
@@ -150,7 +150,7 @@ nav .logo-text {
 
 
 .diamond-2 {
-    color: #0074D9;
+    color: #31b9ff;
     font-family: 'Benguiat', serif;
     font-size: 25px;
 }
@@ -231,10 +231,11 @@ nav .logo-text {
     margin-top: 50px;
 }
 
+
 .custom-button,
 .custom-button-2 {
-    background: linear-gradient(180deg, #0074D9 0%, #02305e 100%);
-    color: white;
+    background: #31b9ff;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     padding: 13px 27px;
     border-radius: 4px;
@@ -242,22 +243,29 @@ nav .logo-text {
     text-decoration: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background 0.3s ease, box-shadow 0.3s ease, outline 0.3s ease;
-    outline: 2px solid transparent; /* Use outline instead of border to avoid affecting button size */
+    outline: 2px solid #31b9ff;
+}
+
+.custom-button {
+    color: black;
+    font-weight: 600;
 }
 
 .custom-button-2 {
     background: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+    outline-color: #31b9ff;
     transition: background 0.3s ease, box-shadow 0.3s ease, outline 0.3s ease;
 }
 
 .custom-button-2:hover {
-    outline-color: #0074D9; /* Change outline color on hover */
+    outline-color: #31b9ff;
     transition: background 0.3s ease, box-shadow 0.3s ease, outline 0.3s ease;
 }
 
 .custom-button:hover {
     background: transparent;
-    outline: 2px solid #0074D9; /* Outline on hover instead of border */
+    outline: 2px solid #31b9ff;
+    color: white;
     transition: background 0.3s ease, box-shadow 0.3s ease, outline 0.3s ease;
 }
 
